@@ -11,15 +11,13 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ miniposi.github.io }}
+      #url: ${{ miniposi.github.io }}
   
     # the type of runner that the job will run on
     runs-on: ubuntu-latest
     
     # steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: index.html
-    
       # runs a single command using the runners shell
       - name: Deploy my homepage
         id: deployment
